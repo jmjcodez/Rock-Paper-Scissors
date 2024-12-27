@@ -17,3 +17,23 @@ function getComputerChoice() {
 let computerChoice = getComputerChoice();
 console.log(computerChoice);
 
+/* Write logic to get the humans choice. Make  function for this algorithm. Create a prompt for user input text, limit it so that can only select Rock Paper or Scissors. Present an error message until the correct choice is picked. Only accept those 3. Store that value into a variable for humanChoice */
+
+let userChoice;
+
+function getHumanChoice() {
+	let keepGoing = true;
+	while(keepGoing){
+		userChoice = prompt("Choose: Rock, Paper, or Scissors?","");
+
+		if (userChoice === "Rock" || userChoice === "Paper" || userChoice === "Scissors"){
+			keepGoing = "false";
+			return userChoice;
+		}
+		else{
+			alert("Invalid input, try again!")
+		}
+	}
+	}
+let humanChoice = getHumanChoice();
+console.log(humanChoice);
