@@ -37,14 +37,11 @@ function getHumanChoice() {
 
 /* Write logic to play a single round, create function that takes human and computer choices as arguments. Plays a round and increments the winner's score and logs a winner. Modify the user input for human choice to take case insensitive values. Create hiearachy of all scenarios to determine winner of points and ties.  */
 
-
-
 /* Add function to play a game. Nest the necessary functions within a loop to keep playing the game until a score of 5 is reached by either player. When 5 is reached end the loop and return message of final score and winner */
 
 
 function playGame (){
 	
-
 	
 	function playRound(humanSelection, computerSelection){
 		if (humanSelection === computerSelection){
